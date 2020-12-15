@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.pactera.widget.YSToolBar
+        android:id="@+id/activity_modify_pigeonry_ys_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ystoolbar_middle_text_view_text="修改鸽舍"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/dp_of_10"
+        android:layout_marginEnd="@dimen/dp_of_10">
+
+        <com.pactera.widget.YSLinearLayoutHorizontalTextViewEditText
+            android:id="@+id/activity_modify_pigeonry_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text_view_text="鸽舍名称"/>
+
+        <com.pactera.widget.YSLinearLayoutHorizontalTextViewEditText
+            android:id="@+id/activity_modify_pigeonry_beianhao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text_view_text="鸽舍备案编号"/>
+
+        <com.pactera.widget.YSLinearLayoutHorizontalWeiDoubleTextView
+            android:id="@+id/activity_modify_pigeonry_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:wei_left_text_view_text="所属省市区"/>
+
+        <com.pactera.widget.YSLinearLayoutHorizontalTextViewEditText
+            android:id="@+id/activity_modify_pigeonry_detail_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text_view_text="具体地址"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_view"
+                android:id="@+id/fragment_pigeonry_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_of_10"
+                android:text="鸽舍介绍"
+                android:textSize="@dimen/sp_of_16"/>
+
+            <EditText
+                android:id="@+id/activity_modify_pigeonry_edit_text_descriptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/dp_of_80"
+                android:layout_marginTop="@dimen/dp_of_10"
+                android:background="@drawable/checkbox_unselected"
+                android:textSize="@dimen/sp_of_16"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

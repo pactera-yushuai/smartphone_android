@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/dp_of_50">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_tint" />
+    
+    <TextView
+        android:id="@+id/ys_linear_layout_horizontial_text_view_edit_text_text_view"
+        style="@style/tvTitle_release"
+        android:layout_width="@dimen/dp_of_100"
+        android:layout_centerVertical="true"
+        tools:text="我爱Android：" />
+    
+    <EditText
+        android:id="@+id/ys_linear_layout_horizontial_text_view_edit_text_edit_text"
+        style="@style/editText_release"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/ys_linear_layout_horizontial_text_view_edit_text_text_view"
+        android:hint="我爱Android"
+        android:maxLength="200" />
+
+</RelativeLayout>
+

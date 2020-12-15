@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/shimmer_view_container"
+    >
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp_of_10"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:focusable="true"
+        android:layout_margin="@dimen/dp_of_5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_margin="@dimen/dp_of_5"
+                android:id="@+id/cell_temp_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_200"
+                android:src="@color/colorSecondry"
+                android:scaleType="centerCrop"
+                android:background="@color/colorSecondry"
+                />
+
+            <View
+                android:layout_margin="@dimen/dp_of_5"
+                android:id="@+id/cell_temp_text_view1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_20"
+                android:background="@color/colorSecondry"
+                />
+
+            <View
+                android:layout_margin="@dimen/dp_of_5"
+                android:id="@+id/cell_temp_text_view2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_20"
+                android:background="@color/colorSecondry"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</com.facebook.shimmer.ShimmerFrameLayout>

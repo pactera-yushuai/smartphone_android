@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_tint" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dp_of_10"
+        android:paddingEnd="@dimen/dp_of_10"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_view"
+            android:id="@+id/ys_linearlayout_horizontal_double_textview_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/dp_of_10"
+            android:gravity="center_vertical"
+            tools:text="我的赛鸽"
+            android:textSize="@dimen/sp_of_16" />
+
+        <TextView
+            style="@style/text_view"
+            android:id="@+id/ys_linearlayout_horizontal_double_textview_right"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_50"
+            android:drawablePadding="@dimen/dp_of_10"
+            android:gravity="center_vertical|end"
+            android:textSize="@dimen/sp_of_16"
+            android:textStyle="bold"
+            tools:text="我的赛鸽"/>
+
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pop_window_all_filter_jiekuanzhuti"
+                style="@style/textview_left"
+                android:layout_gravity="center_vertical"
+                android:text="借款主体：" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pop_window_all_filter_jiekuanzhuti"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/pop_window_all_filter_radiobutton_buxianjiekuanzhuti"
+                    style="@style/radiobutton"
+                    android:text="不限" />
+
+                <RadioButton
+                    android:id="@+id/pop_window_all_filter_radiobutton_yougongsi"
+                    style="@style/radiobutton"
+                    android:text="企业主" />
+
+                <RadioButton
+                    android:id="@+id/pop_window_all_filter_radiobutton_gongxinjieceng"
+                    style="@style/radiobutton"
+                    android:text="上班族" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pop_window_all_filter_hangyeleixing"
+                style="@style/textview_left"
+                android:text="行业类型(可多选):" />
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pop_window_all_filter_hangyeleixing"
+                app:rowCount="3"
+                app:columnCount="4">
+
+                <CheckBox
+                    android:id="@+id/pop_window_all_filter_checkbox_buxianhangyeleixing"
+                    style="@style/checkbox"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:text="不限" />
+
+                <CheckBox
+                    android:id="@+id/pop_window_all_filter_checkbox_zhizaoye"
+                    style="@style/checkbox"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:text="制造业" />
+
+                <CheckBox
+                    android:id="@+id/pop_window_all_filter_checkbox_pifaye"
+                    style="@style/checkbox"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:text="批发业" />
+
+                <CheckBox
+                    android:id="@+id/pop_window_all_filter_checkbox_lingshouye"
+                    style="@style/checkbox"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:text="零售业" />
+
+                <CheckBox
+                    android:id="@+id/pop_window_all_filter_checkbox_jinchukou"
+                    style="@style/checkbox"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:text="进出口" />
+
+                <CheckBox
+                    android:id="@+id/pop_window_all_filter_checkbox_neimao"
+                    style="@style/checkbox"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:text="贸易" />
+
+                <CheckBox
+                    android:id="@+id/pop_window_all_filter_checkbox_fuwuye"
+                    style="@style/checkbox"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:text="服务业" />
+
+                <CheckBox
+                    android:id="@+id/pop_window_all_filter_checkbox_gongcheng"
+                    style="@style/checkbox"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:text="工程" />
+
+                <CheckBox
+                    android:id="@+id/pop_window_all_filter_checkbox_fangdichan"
+                    style="@style/checkbox"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:text="房地产" />
+
+                <CheckBox
+                    android:id="@+id/pop_window_all_filter_checkbox_qitahangyeleixing"
+                    style="@style/checkbox"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:text="其他" />
+
+                <CheckBox
+                    style="@style/checkbox"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:visibility="invisible" />
+
+                <CheckBox
+                    style="@style/checkbox"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:visibility="invisible" />
+
+            </android.support.v7.widget.GridLayout>
+
+        </LinearLayout>-->
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

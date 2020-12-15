@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_head"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorSecondry">
+
+    <LinearLayout
+        android:id="@+id/ll_back"
+        android:layout_width="40dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:src="@mipmap/back" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/ys_toolbar_text_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="标题栏"
+        android:textColor="@color/pick_white"
+        android:textSize="18sp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_down"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_toEndOf="@+id/ys_toolbar_text_view_title"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:src="@mipmap/btn_arrow_down_nor"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/iv_setting"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/btn_setup_nor"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/ys_toolbar_button_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:textSize="@dimen/sp_of_16"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

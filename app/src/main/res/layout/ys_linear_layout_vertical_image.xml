@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ys_linear_layout_vertical_text_view"
+        style="@style/tvTitle_release"
+        android:layout_marginTop="@dimen/dp_of_30"
+        android:layout_width="wrap_content"
+        tools:text="上传右侧头照片：" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ys_linear_layout_vertical_image_button_add_photo"
+            android:layout_width="@dimen/dp_of_60"
+            android:layout_height="@dimen/dp_of_60"
+            android:background="@android:color/transparent"
+            android:scaleType="center"
+            android:src="@drawable/ic_camera_alt_blue_400_48dp" />
+
+        <ImageView
+            android:id="@+id/ys_linear_layout_vertical_image_view_add_photo"
+            android:layout_width="@dimen/dp_of_200"
+            android:layout_height="@dimen/dp_of_200"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/dp_of_10" />
+
+    </LinearLayout>
+
+</LinearLayout>

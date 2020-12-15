@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fffffe</color>
+    <color name="colorPrimaryDark">@color/background_color</color>
+    <color name="colorAccent">@color/background_color</color>
+
+    <!--间隔线-->
+    <color name="jx">#d9d0d0</color>
+
+    <!-- FragmentTabHost字色 -->
+    <color name="font_footer_press">@color/background_color</color>
+    <color name="font_footer_default">@color/gray</color>
+
+    <color name="colorSecondry">#10AF9E</color>
+
+    <color name="gray_tint">#F5F5F5</color>
+    <color name="gray">#8000</color>
+
+    <!-- 纯背景时选的颜色 -->
+    <color name="background_color">#FE7300</color>
+
+
+    <color name="alpha_dark_color">#99000000</color>
+
+
+    <!-- 图片选择器 -->
+    <color name="pick_black">#191919</color>
+    <color name="pick_light">#E6E7EB</color>
+    <color name="pick_white">#FFFFFF</color>
+    <color name="pick_parse">#c8454444</color>
+    <color name="pick_gray">#AFB0B3</color>
+    <color name="pick_green">#00C07F</color>
+    <color name="alpha">#00fff000</color>
+
+    <!--主流灰色-->
+    <color name="gray_f2">#f2f2f2</color>
+    <color name="gray_ef">#efefef</color>
+    <color name="gray_cc">#cccccc</color>
+    <color name="gray_99">#999999</color>
+    <color name="gray_66">#666666</color>
+    <color name="gray_33">#333333</color>
+
+
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorSecondry">
+
+        <ImageButton
+            android:id="@+id/activity_organization1_image_button"
+            android:layout_width="@dimen/dp_of_30"
+            android:layout_height="@dimen/dp_of_30"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back"
+            android:layout_marginStart="@dimen/dp_of_10"
+            android:background="@android:color/transparent"/>
+
+        <RadioGroup
+            android:id="@+id/my_segment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_of_50"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/my_toolbar_button1"
+                android:layout_width="@dimen/dp_of_100"
+                android:layout_height="@dimen/dp_of_30"
+                android:background="@drawable/selector_left_radius_white_green"
+                android:button="@null"
+                android:gravity="center"
+                android:checked="true"
+                android:textColor="@drawable/selector_color_green_white"
+                android:textSize="@dimen/sp_of_14"
+                android:text="我加入的"
+                />
+
+            <RadioButton
+                android:id="@+id/my_toolbar_button2"
+                android:layout_width="@dimen/dp_of_100"
+                android:layout_height="@dimen/dp_of_30"
+                android:background="@drawable/selector_right_radius_white_green"
+                android:button="@null"
+                android:gravity="center"
+                android:textColor="@drawable/selector_color_green_white"
+                android:textSize="@dimen/sp_of_14"
+                android:text="我关注的"
+                />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/activity_organization1_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+
+
+

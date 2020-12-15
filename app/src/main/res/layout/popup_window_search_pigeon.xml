@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pop_window_search_pigeon_relativelayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@android:color/white">
+
+    <com.pactera.widget.YSToolBar2
+        android:id="@+id/pop_window_search_pigeon_ystoolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:ystoolbar2_left_button_text="返回"
+        app:ystoolbar2_right_button_text="确定"
+        app:ystoolbar2_middle_text_view_text="赛鸽查询"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_of_16"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <com.pactera.widget.YSLinearLayoutHorizontalTextViewEditText
+            android:id="@+id/pop_window_search_pigeon_pigeonry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text_view_text="按鸽舍名查找（选填)"
+            app:right_edit_text_text="按鸽舍名查找（选填)"/>
+
+        <com.pactera.widget.YSLinearLayoutHorizontalTextViewEditText
+            android:id="@+id/pop_window_search_pigeon_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text_view_text="按鸽主姓名查找（选填)"
+            app:right_edit_text_text="按鸽主姓名查找（选填)"/>
+
+        <com.pactera.widget.YSLinearLayoutHorizontalTextViewEditText
+            android:id="@+id/pop_window_search_pigeon_ring"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text_view_text="按足环号查找（选填)"
+            app:right_edit_text_text="按足环号查找（选填)"/>
+
+        <com.pactera.widget.YSLinearLayoutHorizontalWeiDoubleTextView
+            android:id="@+id/pop_window_search_pigeon_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:wei_left_text_view_text="按性别查找（选填)"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

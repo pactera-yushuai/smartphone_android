@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray_tint"
+    android:orientation="vertical"
+    >
+
+    <com.pactera.widget.YSToolBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ystoolbar_middle_text_view_text="修改手机号"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_of_10">
+
+        <com.pactera.widget.YSLinearLayoutHorizontalTextViewEditText2
+            android:id="@+id/activity_change_phonenum_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text_view_text2="请输入原手机号"
+            app:right_edit_text_hint2="请输入原手机号"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dp_of_50">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_tint" />
+
+            <TextView
+                android:id="@+id/ys_linear_layout_horizontial_text_view_edit_text_text_view"
+                style="@style/tvTitle_release"
+                android:layout_width="@dimen/dp_of_100"
+                android:layout_centerVertical="true"
+                android:text="请输入验证码" />
+
+            <EditText
+                android:id="@+id/activity_change_phonenum_verify"
+                style="@style/editText_release"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ys_linear_layout_horizontial_text_view_edit_text_text_view"
+                android:hint="请输入验证码"
+                android:maxLength="200" />
+
+            <Button
+                android:id="@+id/activity_change_phonenum_button_getverify"
+                android:text="获取验证码"
+                android:textSize="@dimen/sp_of_12"
+                android:textColor="@android:color/white"
+                android:background="@drawable/filter_button"
+                android:gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_of_15" />
+
+        </RelativeLayout>
+
+        <com.pactera.widget.YSLinearLayoutHorizontalTextViewEditText2
+            android:id="@+id/activity_change_phonenum_newmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text_view_text2="请输入新手机号"
+            app:right_edit_text_hint2="请输入新手机号"/>
+
+        <Button
+            android:id="@+id/activity_changephonenum_confirm_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_of_10"
+            android:text="确认修改"
+            android:textSize="@dimen/sp_of_18"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

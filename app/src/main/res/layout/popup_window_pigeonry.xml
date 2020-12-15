@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pop_window_pigeonry_relativelayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@android:color/transparent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/fragment_pigeonry"/>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/pop_window_pigeonry_relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_50"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorSecondry">
+
+        <Button
+            android:id="@+id/pop_window_pigeonry_button_makesure"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="添  加"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="1dp"
+            android:background="@android:color/white"/>
+
+        <Button
+            android:id="@+id/pop_window_pigeonry_button_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="取  消"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

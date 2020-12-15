@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.pactera.widget.YSToolBar
+        android:id="@+id/activity_settings_ystoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ystoolbar_middle_text_view_text="我的账户"/>
+
+    <!--<android.support.v7.widget.SwitchCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/dp_of_20"
+                android:background="@android:color/white"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="@dimen/dp_of_3"
+                    android:layout_height="@dimen/dp_of_14"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp_of_14"
+                    android:background="@color/colorSecondry" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp_of_10"
+                    android:text="通用设置"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/sp_of_22" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.pactera.widget.YSLinearLayoutVertical
+                    android:id="@+id/activity_settings_yslinearlayout_yinhangka"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:title_text="我的银行卡"
+                    />
+
+
+                <com.pactera.widget.YSLinearLayoutVertical
+                    android:id="@+id/activity_settings_yslinearlayout_jiaofeijilu"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:title_text="缴费记录"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/dp_of_20"
+                android:background="@android:color/white">
+
+                <View
+                    android:layout_width="@dimen/dp_of_3"
+                    android:layout_height="@dimen/dp_of_14"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp_of_14"
+                    android:background="@color/colorSecondry" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp_of_10"
+                    android:text="个人信息"
+                    android:textColor="@color/gray_33"
+                    android:textSize="@dimen/sp_of_22" />
+
+            </LinearLayout>
+
+            <com.pactera.widget.YSLinearLayoutHorizontalDoubleTextView
+                android:id="@+id/activity_settings_xingming"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_50"
+                app:left_text_view_text="用户名"
+                />
+
+            <com.pactera.widget.YSLinearLayoutHorizontalDoubleTextView
+                android:id="@+id/activity_settings_dianhua"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_50"
+                app:left_text_view_text="电话"
+                />
+
+            <com.pactera.widget.YSLinearLayoutHorizontalDoubleTextView
+                android:id="@+id/activity_settings_zhuzhi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_50"
+                app:left_text_view_text="住址"
+                />
+
+            <com.pactera.widget.YSLinearLayoutHorizontalSingleTextView
+                android:id="@+id/activity_settings_xiugaimima"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_50"
+                app:title_text_h="修改密码"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_of_50">
+
+                <Button
+                    android:id="@+id/activity_settings_button_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_background"
+                    android:text="退出登录"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

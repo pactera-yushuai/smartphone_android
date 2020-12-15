@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_my_training_result_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <com.pactera.widget.YSLinearLayoutHorizontalDoubleTextView3
+        android:id="@+id/activity_my_training_result_shijian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_text_view_text3="司放时间"/>
+
+    <com.pactera.widget.YSLinearLayoutHorizontalDoubleTextView3
+        android:id="@+id/activity_my_training_result_jingweidu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_text_view_text3="放飞地经纬度"
+        android:visibility="gone"/>
+
+    <com.pactera.widget.YSLinearLayoutHorizontalDoubleTextView3
+        android:id="@+id/activity_my_training_result_tianqi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_text_view_text3="放飞天气"
+        android:visibility="gone"/>
+
+    <com.pactera.widget.YSLinearLayoutHorizontalDoubleTextView3
+        android:id="@+id/activity_my_training_result_kongju"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_text_view_text3="空距"/>
+
+    <com.pactera.widget.YSLinearLayoutHorizontalDoubleTextView3
+        android:id="@+id/activity_my_training_result_fangfei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_text_view_text3="放飞羽数"/>
+
+    <com.pactera.widget.YSLinearLayoutHorizontalDoubleTextView3
+        android:id="@+id/activity_my_training_result_guichao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_text_view_text3="归巢羽数"/>
+
+</LinearLayout>

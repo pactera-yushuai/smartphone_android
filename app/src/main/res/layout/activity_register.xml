@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_tint"
+    android:orientation="vertical">
+
+    <com.pactera.widget.YSToolBar
+        android:id="@+id/activity_register_ystoolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:ystoolbar_middle_text_view_text="注册"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_of_10"
+                android:gravity="center"
+                android:text="个人信息"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/activity_register_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="@dimen/dp_of_10"
+                android:elevation="@dimen/dp_of_10"
+                android:layout_margin="@dimen/dp_of_16">
+
+                <LinearLayout
+                    android:id="@+id/activity_register_verticalmiddle"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.pactera.widget.YSLinearLayoutHorizontalTextViewEditText2
+                        android:id="@+id/activity_register_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:text_view_text2="请输入手机号"
+                        app:right_edit_text_hint2="请输入手机号"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/dp_of_50">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray_tint" />
+
+                        <TextView
+                            android:id="@+id/ys_linear_layout_horizontial_text_view_edit_text_text_view"
+                            style="@style/tvTitle_release"
+                            android:layout_width="@dimen/dp_of_100"
+                            android:layout_centerVertical="true"
+                            android:text="请输入验证码" />
+
+                        <EditText
+                            android:id="@+id/activity_register_verify"
+                            style="@style/editText_release"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/ys_linear_layout_horizontial_text_view_edit_text_text_view"
+                            android:hint="请输入验证码"
+                            android:maxLength="200" />
+
+                        <Button
+                            android:id="@+id/activity_register_button_getverify"
+                            android:text="获取验证码"
+                            android:textSize="@dimen/sp_of_12"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/filter_button"
+                            android:gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/dp_of_15" />
+
+                    </RelativeLayout>
+
+                    <com.pactera.widget.YSLinearLayoutHorizontalTextViewEditText2
+                        android:id="@+id/activity_register_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:text_view_text2="请输入您的用户名"
+                        app:right_edit_text_hint2="请输入您的用户名"/>
+
+                    <com.pactera.widget.YSLinearLayoutHorizontalTextViewEditText2
+                        android:id="@+id/activity_register_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:text_view_text2="请输入密码"
+                        app:right_edit_text_hint2="请输入密码"/>
+
+                    <com.pactera.widget.YSLinearLayoutHorizontalTextViewEditText2
+                        android:id="@+id/activity_register_repassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:text_view_text2="请再次输入密码"
+                        app:right_edit_text_hint2="请再次输入密码"/>
+
+                    <com.pactera.widget.YSLinearLayoutHorizontalDoubleTextView2
+                        android:id="@+id/activity_register_person_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:left_text_view_text2="请选择省市区"
+                        app:right_text_view_text2="我的省市区"/>
+
+                    <com.pactera.widget.YSLinearLayoutHorizontalTextViewEditText2
+                        android:id="@+id/activity_register_person_detail_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:text_view_text2="请输入详细地址"
+                        app:right_edit_text_hint2="详细地址"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="我的设备"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="@dimen/dp_of_10"
+                android:elevation="@dimen/dp_of_10"
+                android:layout_margin="@dimen/dp_of_16">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.pactera.widget.YSLinearLayoutHorizontalDoubleTextView2
+                        android:id="@+id/activity_register_device_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:left_text_view_text2="请输入名称"
+                        app:right_text_view_text2="设备名称"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/dp_of_50">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray_tint" />
+
+                        <TextView
+                            android:id="@+id/activity_register_device_imsi"
+                            style="@style/tvTitle_release"
+                            android:layout_width="@dimen/dp_of_100"
+                            android:layout_centerVertical="true"
+                            android:text="请输入识别号" />
+
+                        <EditText
+                            android:id="@+id/activity_register_edittext_qrcode"
+                            style="@style/editText_release"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/activity_register_device_imsi"
+                            android:hint="请输入识别号"
+                            android:maxLength="200" />
+
+                        <Button
+                            android:id="@+id/activity_register_button_scanqrcode"
+                            android:text="扫描二维码"
+                            android:textSize="@dimen/sp_of_12"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/filter_button"
+                            android:gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/dp_of_15" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="我的鸽舍"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="@dimen/dp_of_10"
+                android:elevation="@dimen/dp_of_10"
+                android:layout_margin="@dimen/dp_of_16">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.pactera.widget.YSLinearLayoutHorizontalTextViewEditText2
+                        android:id="@+id/activity_register_pigeonry_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:text_view_text2="请输入鸽舍名称"
+                        app:right_edit_text_hint2="鸽舍名称"/>
+
+                    <com.pactera.widget.YSLinearLayoutHorizontalTextViewEditText2
+                        android:id="@+id/activity_register_pigeonry_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:text_view_text2="请输入备案编号"
+                        app:right_edit_text_hint2="鸽舍备案编号"/>
+
+                    <com.pactera.widget.YSLinearLayoutHorizontalDoubleTextView2
+                        android:id="@+id/activity_register_pigeonry_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:left_text_view_text2="请选择省市区"
+                        app:right_text_view_text2="鸽舍省市区"/>
+
+                    <com.pactera.widget.YSLinearLayoutHorizontalTextViewEditText2
+                        android:id="@+id/activity_register_pigeonry_detail_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:text_view_text2="请输入详细地址"
+                        app:right_edit_text_hint2="详细地址"/>
+
+                    <com.pactera.widget.YSLinearLayoutVerticalTextViewEditText
+                        android:id="@+id/activity_register_pigeonry_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:ys_vertical_top_text_view_text="请填写鸽舍介绍"
+                        app:ys_vertical_bottom_edit_text_hint="请填写鸽舍介绍"
+                        />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/activity_register_button_register"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="@dimen/dp_of_50"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_of_40"
+                android:text="注      册"
+                android:textSize="@dimen/sp_of_18"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

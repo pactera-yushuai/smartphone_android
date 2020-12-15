@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/white">
+<!--    android:layout_marginStart="10dp"-->
+<!--    android:layout_marginEnd="10dp"-->
+
+    <com.youth.banner.Banner
+        android:id="@+id/view_ten_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_180"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.pactera.widget.YSLinearLayoutVertical
+            android:id="@+id/fragment_home_yslinearlayout_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:title_text="@string/wuganjiazai"
+            />
+
+        <com.pactera.widget.YSLinearLayoutVertical
+            android:id="@+id/fragment_home_yslinearlayout_2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:title_text="@string/xiazai"
+            />
+
+        <com.pactera.widget.YSLinearLayoutVertical
+            android:id="@+id/fragment_home_yslinearlayout_3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:title_text="@string/gujiaping"
+            />
+
+        <com.pactera.widget.YSLinearLayoutVertical
+            android:id="@+id/fragment_home_yslinearlayout_4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:title_text="かわいい"
+            />
+
+        <com.pactera.widget.YSLinearLayoutVertical
+            android:id="@+id/fragment_home_yslinearlayout_5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:title_text="かわいい"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.pactera.widget.YSLinearLayoutVertical
+            android:id="@+id/fragment_home_yslinearlayout_6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:title_text="かわいい"
+            />
+
+        <com.pactera.widget.YSLinearLayoutVertical
+            android:id="@+id/fragment_home_yslinearlayout_7"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:title_text="かわいい"
+            />
+
+        <com.pactera.widget.YSLinearLayoutVertical
+            android:id="@+id/fragment_home_yslinearlayout_8"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:title_text="かわいい"
+            />
+
+        <com.pactera.widget.YSLinearLayoutVertical
+            android:id="@+id/fragment_home_yslinearlayout_9"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:title_text="かわいい"
+            />
+
+        <com.pactera.widget.YSLinearLayoutVertical
+            android:id="@+id/fragment_home_yslinearlayout_10"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:title_text="かわいい"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

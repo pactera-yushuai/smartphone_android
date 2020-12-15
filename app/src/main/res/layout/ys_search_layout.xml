@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ys_search_layout_ll_search"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="@drawable/circle_edittext"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ys_search_layout_imageview_fangdajing"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_search_white_24dp"
+            android:background="@android:color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"/>
+
+        <EditText
+            android:id="@+id/ys_search_layout_edit_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/search_input_textsize"
+            android:hint="@string/search_text_hint"
+
+            android:layout_toEndOf="@+id/ys_search_layout_imageview_fangdajing"
+            android:layout_toStartOf="@+id/ys_search_layout_iv_cleartext"
+            android:layout_marginStart="5dp"
+            />
+        <!--android:textColorHint="@color/search_texthint"-->
+
+        <ImageView
+            android:id="@+id/ys_search_layout_iv_cleartext"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/btn_close_nor"
+            android:background="@android:color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:visibility="invisible"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ys_search_layout_tv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/search_right_textsize"
+        android:textColor="@android:color/white"
+        android:text="搜索"
+        android:background="@android:color/transparent"
+        />
+
+</LinearLayout>

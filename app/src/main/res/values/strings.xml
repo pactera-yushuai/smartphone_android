@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pactera</string>
+
+
+
+    <string name="body_pic">全身照片</string>
+    <string name="feather_pic">翅膀照片</string>
+    <string name="right_head_pic">右头像</string>
+    <string name="left_head_pic">左头像</string>
+
+    <string name="male">雄</string>
+    <string name="female">雌</string>
+
+    <string name="has_chose">已选择</string>
+    <string name="picture_unit">张</string>
+    <string name="please_choose_pic">选择图片</string>
+    <string name="arrive_limit_count">已达到最大选择数</string>
+
+    <string name="wenjianxiazai">ファイルのダウンロード</string>
+    <string name="kaishi">開始</string>
+
+    <string name="wuganjiazai">感覚のないデータを読み込む</string>
+    <string name="suoluetu">サムネイル</string>
+    <string name="gujiaping">スケルトン</string>
+
+    <string name="wuyouhua">最適化はありません</string>
+    <string name="youhuahou">最適化後</string>
+
+    <string name="server_response_error">服务器响应失败</string>
+
+    <string name="no_more_data">已经没有更多内容了</string>
+    <string name="json_fail">json解析失败</string>
+    <string name="alert_title">鸽小宝提示</string>
+
+    <string name="Announcement">Announcement</string>
+    <string name="OrganizationVo">OrganizationVo</string>
+    <string name="Training">Training</string>
+    <string name="Pigeon">Pigeon</string>
+    <string name="Pigeonry">Pigeonry</string>
+    <string name="Race">Race</string>
+    <string name="RaceDesignatedList">RaceDesignatedList</string>
+    <string name="Device">Device</string>
+    <string name="RaceEvent">RaceEvent</string>
+    <string name="longitude">longitude</string>
+    <string name="latitude">latitude</string>
+    <string name="ringsn">ringsn</string>
+    <string name="AddTraining">AddTraining</string>
+    <string name="SignUp">SignUp</string>
+    <string name="AMapLocation">AMapLocation</string>
+    <string name="User">User</string>
+
+    <string name="search_text_txt">搜索</string>
+    <string name="search_text_hint">検索</string>
+
+    <string name="xiazai">ダウンロード</string>
+    <string name="jiansuo">検索</string>
+    <string name="shouye">ホーム</string>
+
+    <string name="remai">ホット販売</string>
+    <string name="cases">最適化ケース</string>
+
+    <string name="hint_of_exit">再按一次后退键退出程序</string>
+
+</resources>

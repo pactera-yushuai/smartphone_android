@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--头部-->
+    <RelativeLayout
+        android:id="@+id/fragment_home_constraintlayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorSecondry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_of_5"
+            android:text="东京"
+            android:textColor="@android:color/white"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/ys_search_layout_edit_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/search_input_textsize"
+            android:hint="@string/search_text_hint"
+            android:layout_toEndOf="@+id/ys_search_layout_imageview_fangdajing"
+            android:layout_toStartOf="@+id/ys_search_layout_iv_cleartext"
+            android:layout_marginStart="5dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/menu_new"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/fragment_home_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_home_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:spanCount="2"
+            android:background="@color/gray_f2" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@color/gray_f2">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <com.youth.banner.Banner-->
+<!--                android:id="@+id/fragment_home_banner"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/dp_of_180"/>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <com.pactera.widget.YSLinearLayoutVertical-->
+<!--                    android:id="@+id/fragment_home_yslinearlayout_1"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:title_text="我的账户"-->
+<!--                    />-->
+
+<!--                <com.pactera.widget.YSLinearLayoutVertical-->
+<!--                    android:id="@+id/fragment_home_yslinearlayout_2"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:title_text="我的账户"-->
+<!--                    />-->
+
+<!--                <com.pactera.widget.YSLinearLayoutVertical-->
+<!--                    android:id="@+id/fragment_home_yslinearlayout_3"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:title_text="我的账户"-->
+<!--                    />-->
+
+<!--                <com.pactera.widget.YSLinearLayoutVertical-->
+<!--                    android:id="@+id/fragment_home_yslinearlayout_4"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:title_text="我的账户"-->
+<!--                    />-->
+
+<!--                <com.pactera.widget.YSLinearLayoutVertical-->
+<!--                    android:id="@+id/fragment_home_yslinearlayout_5"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:title_text="我的账户"-->
+<!--                    />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <com.pactera.widget.YSLinearLayoutVertical-->
+<!--                    android:id="@+id/fragment_home_yslinearlayout_6"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:title_text="我的消息"-->
+<!--                    />-->
+
+<!--                <com.pactera.widget.YSLinearLayoutVertical-->
+<!--                    android:id="@+id/fragment_home_yslinearlayout_7"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:title_text="我的账户"-->
+<!--                    />-->
+
+<!--                <com.pactera.widget.YSLinearLayoutVertical-->
+<!--                    android:id="@+id/fragment_home_yslinearlayout_8"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:title_text="我的账户"-->
+<!--                    />-->
+
+<!--                <com.pactera.widget.YSLinearLayoutVertical-->
+<!--                    android:id="@+id/fragment_home_yslinearlayout_9"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:title_text="我的账户"-->
+<!--                    />-->
+
+<!--                <com.pactera.widget.YSLinearLayoutVertical-->
+<!--                    android:id="@+id/fragment_home_yslinearlayout_10"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:title_text="我的账户"-->
+<!--                    />-->
+
+<!--            </LinearLayout>-->
+
+<!--&lt;!&ndash;            <com.cooltechworks.views.shimmer.ShimmerRecyclerView&ndash;&gt;-->
+<!--&lt;!&ndash;                xmlns:app="http://schemas.android.com/apk/res-auto"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/shimmer_recycler_view"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:shimmer_demo_child_count="10"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:shimmer_demo_grid_child_count="2"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:shimmer_demo_layout="@layout/layout_demo_grid"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:shimmer_demo_layout_manager_type="grid"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:shimmer_demo_angle="20"&ndash;&gt;-->
+<!--&lt;!&ndash;                />&ndash;&gt;-->
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/fragment_home_recyclerview"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                app:spanCount="2"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/fragment_home_constraintlayout" />-->
+
+<!--        </LinearLayout>-->
+
+<!--    </ScrollView>-->
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!-- android:background="@mipmap/shanping" -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorSecondry"
+        android:gravity="center"
+        android:text="登录"
+        android:textSize="@dimen/sp_of_18"
+        android:textColor="@android:color/white"/>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/activity_login_verticalmiddle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="160dp"
+        android:padding="@dimen/dp_of_10"
+        android:layout_marginLeft="@dimen/dp_of_10"
+        android:layout_marginRight="@dimen/dp_of_10"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/dp_of_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/activity_login_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入昵称"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="@dimen/dp_of_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/activity_login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入密码"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/activity_login_button_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_40"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="登   录"
+        android:textSize="@dimen/sp_of_16"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="30dp"/>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_of_10"
+        android:padding="@dimen/dp_of_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/activity_login_button_mianfeizhuce"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="免费注册"
+            android:textColor="@color/colorSecondry"
+            android:textSize="@dimen/sp_of_16"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/activity_login_button_forgetpassword"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="忘记密码"
+            android:textColor="@color/colorSecondry"
+            android:textSize="@dimen/sp_of_16"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/colorAccent"
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_of_120"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_tint" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ys_linearlayout_vertical_textview_button_edittext_tv"
+            style="@style/textview_left"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            tools:text="我的赛鸽" />
+
+
+        <Button
+            android:id="@+id/ys_linearlayout_vertical_textview_button_edittext_button"
+            style="@style/textview_left"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_orange_light"
+            tools:text="我的赛鸽" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/ys_linearlayout_vertical_textview_button_edittext_et"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="@dimen/sp_of_18"
+        android:textColor="@android:color/background_dark"
+        android:background="@drawable/checkbox_unselected"
+        tools:text="我的赛鸽"/>
+
+</LinearLayout>
+
+
+
+

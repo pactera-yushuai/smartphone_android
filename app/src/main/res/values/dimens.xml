@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--控件尺寸-->
+    <dimen name="dp_of_1">1dp</dimen>
+    <dimen name="dp_of_2">2dp</dimen>
+    <dimen name="dp_of_3">3dp</dimen>
+    <dimen name="dp_of_5">5dp</dimen>
+    <dimen name="dp_of_10">10dp</dimen>
+    <dimen name="dp_of_12">12dp</dimen>
+    <dimen name="dp_of_14">14dp</dimen>
+    <dimen name="dp_of_15">15dp</dimen>
+    <dimen name="dp_of_16">16dp</dimen>
+    <dimen name="dp_of_20">20dp</dimen>
+    <dimen name="dp_of_25">25dp</dimen>
+    <dimen name="dp_of_30">30dp</dimen>
+    <dimen name="dp_of_40">40dp</dimen>
+    <dimen name="dp_of_50">50dp</dimen>
+    <dimen name="dp_of_actionBarSize">?attr/actionBarSize</dimen>
+    <dimen name="dp_of_55">55dp</dimen>
+    <dimen name="dp_of_60">60dp</dimen>
+    <dimen name="dp_of_65">65dp</dimen>
+    <dimen name="dp_of_75">75dp</dimen>
+    <dimen name="dp_of_80">80dp</dimen>
+    <dimen name="dp_of_90">90dp</dimen>
+    <dimen name="dp_of_100">100dp</dimen>
+    <dimen name="dp_of_110">110dp</dimen>
+    <dimen name="dp_of_120">120dp</dimen>
+    <dimen name="dp_of_140">140dp</dimen>
+    <dimen name="dp_of_160">160dp</dimen>
+    <dimen name="dp_of_180">180dp</dimen>
+    <dimen name="dp_of_200">200dp</dimen>
+    <dimen name="dp_of_240">240dp</dimen>
+    <dimen name="dp_of_280">280dp</dimen>
+    <dimen name="dp_of_300">300dp</dimen>
+    <dimen name="dp_of_360">360dp</dimen>
+    <dimen name="dp_of_400">400dp</dimen>
+
+    <!--文字大小-->
+    <dimen name="sp_of_8">8sp</dimen>
+    <dimen name="sp_of_10">10sp</dimen>
+    <dimen name="sp_of_11">11sp</dimen>
+    <dimen name="sp_of_12">12sp</dimen>
+    <dimen name="sp_of_13">13sp</dimen>
+    <dimen name="sp_of_14">14sp</dimen>
+    <dimen name="sp_of_15">15sp</dimen>
+    <dimen name="sp_of_16">16sp</dimen>
+    <dimen name="sp_of_18">18sp</dimen>
+    <dimen name="sp_of_20">20sp</dimen>
+    <dimen name="sp_of_22">22sp</dimen>
+
+    <!--搜索框右边搜索俩字的字体大小-->
+    <dimen name="search_right_textsize">18sp</dimen>
+    <!--搜索框里面搜索内容字体大小-->
+    <dimen name="search_input_textsize">16sp</dimen>
+
+</resources>

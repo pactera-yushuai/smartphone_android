@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_tint" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/popup_window_calendar_view_left_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorSecondry"
+            android:textStyle="bold"
+            android:text="取消"/>
+
+        <Button
+            android:id="@+id/popup_window_calendar_view_right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorSecondry"
+            android:textStyle="bold"
+            android:text="确定"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_tint" />
+
+
+    <CalendarView
+        android:id="@+id/popup_window_calendar_view_calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minDate="01/01/2000"/>
+
+
+    <!--<DatePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minDate="01/01/2000"
+        android:maxDate="01/01/2019"/>-->
+
+</LinearLayout>

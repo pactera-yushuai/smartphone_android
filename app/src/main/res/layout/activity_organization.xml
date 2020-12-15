@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.pactera.widget.YSToolBar
+        android:id="@+id/activity_organization_ystoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ystoolbar_middle_text_view_text="举办方"/>
+
+    <fragment
+        android:id="@+id/activity_organization_fragment"
+        android:name="cn.pigeon.www.fragment.organization.OrganizationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

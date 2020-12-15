@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_tint" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pop_window_wheel_view_layout_left_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorSecondry"
+            android:textStyle="bold"
+            android:text="取消"/>
+
+        <Button
+            android:id="@+id/pop_window_wheel_view_layout_right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorSecondry"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:text="确定"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_tint" />
+
+    <com.contrarywind.view.WheelView
+        android:id="@+id/pop_window_wheel_view_layout_wheel_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_of_240" />
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ys_linear_layout_vertical_text_view_edit_text_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_of_10"
+        android:layout_marginStart="@dimen/dp_of_10"
+        tools:text="请在此输入撤单原因"
+        android:textSize="@dimen/sp_of_12"
+        android:textColor="@color/gray_99"/>
+
+    <EditText
+        android:id="@+id/ys_linear_layout_vertical_text_view_edit_text_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp_of_80"
+        android:layout_margin="@dimen/dp_of_10"
+        android:background="@drawable/checkbox_unselected"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp_of_16"/>
+
+</LinearLayout>

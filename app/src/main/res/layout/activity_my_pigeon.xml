@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.pactera.widget.YSToolBar
+        android:id="@+id/activity_my_pigeon_ystoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ystoolbar_middle_text_view_text="我的赛鸽"/>
+    
+    <com.pactera.widget.YSSearchView
+        android:id="@+id/activity_my_pigeon_ys_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <include
+        layout="@layout/framelayout_framelayout"/>
+
+</LinearLayout>
