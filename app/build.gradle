@@ -31,11 +31,11 @@ allprojects {
 
 android {
     compileSdkVersion 30
-    buildToolsVersion '29.0.2'
+    buildToolsVersion '30.0.2'
 
     defaultConfig {
         applicationId "com.pactera"
-        minSdkVersion 18
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 100
         versionName "1.0.0"
