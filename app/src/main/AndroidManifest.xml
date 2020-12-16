@@ -62,8 +62,6 @@
             android:name="com.amap.api.v2.apikey"
             android:value="5d58d8d1861d409b94aba611aaaf1f89"/>
 
-        <service android:name="com.amap.api.location.APSService"/>
-
         <activity
             android:name="com.pactera.activity.HomeActivity"
             android:screenOrientation="portrait">
