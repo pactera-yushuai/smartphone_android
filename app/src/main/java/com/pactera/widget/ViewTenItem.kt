@@ -37,7 +37,7 @@ class ViewTenItem(context: Context, attrs:AttributeSet?):RelativeLayout(context,
         with(fragment_home_yslinearlayout_2){
             getImageButton().setImageResource(com.pactera.R.mipmap.menu_hot)
             setOnClickListener {
-                mActivity.startActivity(Intent(mActivity, DownloadActivity::class.java))
+//                mActivity.startActivity(Intent(mActivity, DownloadActivity::class.java))
             }
         }
 
