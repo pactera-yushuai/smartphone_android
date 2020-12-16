@@ -5,24 +5,64 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!--头部-->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorSecondry">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="鸽小宝"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/sp_of_18" />
-    </RelativeLayout>
-
     <FrameLayout
         android:id="@+id/fragment_main_framelayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+        android:checkedButton="@+id/fragment_main_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:gravity="center_vertical">
+
+        <RadioButton
+            android:id="@+id/fragment_main_radiobutton_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_home"
+            android:textColor="@drawable/selector_text_background"
+            android:text="@string/shouye"/>
+
+        <!--        <RadioButton-->
+        <!--            android:id="@+id/fragment_main_radiobutton_race"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:gravity="center"-->
+        <!--            android:button="@null"-->
+        <!--            android:drawableTop="@drawable/selector_race"-->
+        <!--            android:textColor="@drawable/selector_text_background"-->
+        <!--            android:text="微淘"/>-->
+
+        <RadioButton
+            android:id="@+id/fragment_main_radiobutton_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_me"
+            android:textColor="@drawable/selector_text_background"
+            android:text="@string/xiazai"/>
+
+        <RadioButton
+            android:id="@+id/fragment_main_radiobutton_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_search"
+            android:textColor="@drawable/selector_text_background"
+            android:text="@string/jiansuo"/>
+
+    </RadioGroup>
 
 </LinearLayout>

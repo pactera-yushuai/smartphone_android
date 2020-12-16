@@ -10,11 +10,4 @@
         android:src="@mipmap/shanping"
         android:scaleType="fitXY"/>
 
-    <TextView
-        android:id="@+id/fragment_welcome_textview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="success"
-        android:scaleType="fitXY"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

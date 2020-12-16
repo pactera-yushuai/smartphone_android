@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.View
 import com.pactera.R
 import com.pactera.fragment.base.BaseFragment
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_main.*
 
 
 /**
@@ -37,19 +37,19 @@ open class MainFragment : BaseFragment() {
         // 一开始选中HomeFragment
         switchFragment(homeFragment!!)
 
-        activity_main_radiobutton_home.setOnClickListener {
+        fragment_main_radiobutton_home.setOnClickListener {
             switchFragment(homeFragment!!)
         }
 
-//        activity_main_radiobutton_race.setOnClickListener {
+//        fragment_main_radiobutton_race.setOnClickListener {
 //            switchFragment(weiTaoFragment!!)
 //        }
 
-        activity_main_radiobutton_search.setOnClickListener {
+        fragment_main_radiobutton_search.setOnClickListener {
             switchFragment(demosFragment!!)
         }
 
-        activity_main_radiobutton_me.setOnClickListener {
+        fragment_main_radiobutton_me.setOnClickListener {
             switchFragment(downloadFragment!!)
         }
     }
