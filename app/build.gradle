@@ -65,7 +65,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 
             /* 自定义buildType */
-            buildConfigField 'String', 'BASE_URL', '"https://gmxjjzad.dkvet.com"'
+            buildConfigField 'String', 'BASE_URL', '"https://uni.xingyi.art"'
         }
         release {
             // 不显示Log
