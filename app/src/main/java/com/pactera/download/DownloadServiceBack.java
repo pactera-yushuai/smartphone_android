@@ -7,8 +7,8 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
 
-import com.autonavi.amap.mapcore.FileUtil;
 import com.pactera.enums.DownloadJ;
+import com.pactera.utils.FileUtil;
 
 
 public class DownloadServiceBack extends Service {
@@ -63,7 +63,7 @@ public class DownloadServiceBack extends Service {
     public int onStartCommand(Intent intent, int flags, int startId) {
         String msg = intent.getExtras().getString("flag");//通过标识判断下载状态
         url = intent.getExtras().getString("url");
-        fileName= FileUtil.getName(url);
+//        fileName= FileUtil.getName(url);
         if (mThread == null){
             mThread = new DownThread();
         }

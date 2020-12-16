@@ -1,16 +1,19 @@
 package com.pactera.utils
 
+import com.pactera.BuildConfig
+
+
 /**
  * Decription: 接口地址列表
  */
 
 object Urls {
 
-    const val SERVER_URL = "https://uni.xingyi.art"
+    const val SERVER_URL = BuildConfig.BASE_URL
 
     const val IMAGE_URL = "http://192.168.103.32:8080/pigeon/upload/"
 
-    const val GO_SERVER_URL = "https://gmxjjzad.dkvet.com"
+    const val GO_SERVER_URL = ""
 
     const val LOGIN_URL = "$SERVER_URL/auth" // 登录并获取token
 

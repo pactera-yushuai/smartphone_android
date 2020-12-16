@@ -63,6 +63,9 @@ android {
             // 移除无用的resource文件
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            /* 自定义buildType */
+            buildConfigField 'String', 'BASE_URL', '"https://gmxjjzad.dkvet.com"'
         }
         release {
             // 不显示Log
@@ -73,6 +76,18 @@ android {
             // 资源压缩并移除无用的resource文件
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            /* 自定义buildType */
+            buildConfigField 'String', 'BASE_URL', '"https://uni.xingyi.art"'
+            versionNameSuffix '-release'
+        }
+        //预生产版本
+        /* 从给定的构建类型复制所有属性 */
+        pre.initWith(release)
+        pre {
+            versionNameSuffix '-pre'
+//            buildConfigField "String", "BASE_URL", '"https://gmxjjzad.dkvet.com"'
+//            matchingFallbacks = ['pre', 'debug', 'release']
         }
     }
 
@@ -125,7 +140,7 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:$rootProject.recyclerViewVersion"
     implementation "androidx.viewpager2:viewpager2:$rootProject.viewPagerVersion"
     implementation 'com.google.code.gson:gson:2.8.6'
-    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
 
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.6'
 
@@ -186,14 +201,6 @@ dependencies {
 //    implementation 'com.victor:lib:1.0.4'
 //
     implementation 'com.kaopiz:kprogresshud:1.2.0'
-
-    implementation 'com.amap.api:3dmap:6.4.1' // 3D地图
-
-    implementation 'com.amap.api:map2d:5.2.0' // 2D地图
-
-    implementation 'com.amap.api:search:6.1.0' // 搜索
-
-    implementation 'com.amap.api:location:4.2.0' // 定位
 
     testImplementation 'junit:junit:4.13.1'
     testImplementation 'org.robolectric:robolectric:' + rootProject.robolectricVersion

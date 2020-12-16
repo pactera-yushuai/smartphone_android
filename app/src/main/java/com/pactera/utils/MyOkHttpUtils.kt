@@ -59,7 +59,7 @@ object MyOkHttpUtils {
      *  传递参数的get
      */
     fun getReturnWithParamsGeneric(url: String, params: HashMap<String, String>, myHttpCallBackWithGeneric: (res: Response?, ioe: IOException?) -> Unit) {
-
+        Log.d("request url:", url)
         val keys = params.keys.iterator()
         val values = params.values.iterator()
         val stringBuilder = StringBuilder()
