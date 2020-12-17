@@ -60,6 +60,6 @@
     <string name="remai">ホット販売</string>
     <string name="cases">最適化ケース</string>
 
-    <string name="hint_of_exit">再按一次后退键退出程序</string>
+    <string name="hint_of_exit">もう一度押すとプログラムが終了します</string>
 
 </resources>

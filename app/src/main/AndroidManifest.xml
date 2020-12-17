@@ -28,7 +28,6 @@
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
 
 <!--    <instrumentation-->
 <!--        android:name="android.test.InstrumentationTestRunner"-->
@@ -73,12 +72,6 @@
         </activity>
 
         <activity
-            android:name=".activity.demo.DownloadActivity"
-            android:windowSoftInputMode="stateHidden"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-
-        <activity
             android:name="com.pactera.activity.demo.DemowuganjiazaiActivity"
             android:windowSoftInputMode="stateHidden"
             android:launchMode="singleTask"
@@ -108,30 +101,6 @@
             android:name="com.pactera.activity.demo.SkeletonActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" />
-
-        <activity
-            android:name="com.pactera.activity.demo.DownloadActivityBack"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" />
-
-        <service
-            android:name="com.pactera.download.DownloadServiceBack"
-            android:exported="true"
-            android:process=":MyCorn" >
-            <intent-filter>
-                <action android:name="com.pactera.download.DownloadServiceBack" />
-            </intent-filter>
-        </service>
-
-        <service
-            android:name="com.pactera.download.DownloadService"
-            android:exported="false"
-            android:process=":background" >
-            <intent-filter>
-                <action android:name="com.pactera.download.DownloadService" />
-            </intent-filter>
-        </service>
-
 
     </application>
 

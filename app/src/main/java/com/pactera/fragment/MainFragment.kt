@@ -15,14 +15,16 @@ open class MainFragment : BaseFragment() {
     private var homeFragment : HomeFragment1? = null
     private var weiTaoFragment : WeiTaoFragment? = null
     private var demosFragment : DemosFragment? = null
-    private var downloadFragment : DownloadFragment? = null
 
     var savedInstanceState: Bundle? = null
 
     val ORGANIZATION_FRAGMENT = "OrganizationFragmentTab"
     val RACE_FRAGMENT = "raceFragment"
     val SEARCH_PIGEON_FRAGMENT = "searchPigeonFragment"
-    val ME_FRAGMENT = "meFragment"
+    companion object {
+        var downloadFragment : DownloadFragment? = null
+        val DOWNLOADFRAGMENT = "DownloadFragment"
+    }
 
     private val fragmentList = ArrayList<BaseFragment>(4)
     
@@ -92,7 +94,7 @@ open class MainFragment : BaseFragment() {
 
             if(!downloadFragment!!.isAdded){
                 fragmentList.add(downloadFragment!!)
-                childFragmentManager.beginTransaction().add(R.id.fragment_main_framelayout, downloadFragment!!, ME_FRAGMENT).commit()
+                childFragmentManager.beginTransaction().add(R.id.fragment_main_framelayout, downloadFragment!!, DOWNLOADFRAGMENT).commit()
             }
 
 
@@ -111,7 +113,7 @@ open class MainFragment : BaseFragment() {
             }
 
             if(downloadFragment == null){
-                downloadFragment = childFragmentManager.findFragmentByTag(ME_FRAGMENT) as DownloadFragment
+                downloadFragment = childFragmentManager.findFragmentByTag(DOWNLOADFRAGMENT) as DownloadFragment
             }
 
             fragmentList.add(homeFragment!!)

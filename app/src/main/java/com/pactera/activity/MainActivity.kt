@@ -270,7 +270,7 @@ class MainActivity : BaseActivity(){
         if (!isExit) {
             isExit = true // 准备退出
             Common.showToast(this, getString(R.string.hint_of_exit))
-            Handler().postDelayed({
+            Handler(mainLooper).postDelayed({
                 isExit = false // 取消退出
             }, 1000)
         } else {

@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.pactera.R
-import com.pactera.viewmodel.activity.LoginActivityViewModel
 import com.kaopiz.kprogresshud.KProgressHUD
 import com.pactera.fragment.base.BaseFragment
 import kotlinx.android.synthetic.main.activity_login.*
@@ -15,10 +14,7 @@ import kotlinx.android.synthetic.main.activity_login.*
  */
 class DemoThumbnailRawFragment : BaseFragment() {
 
-
     private var rid: String = ""
-
-    private lateinit var loginActivityViewModel: LoginActivityViewModel
 
     private lateinit var hud: KProgressHUD
 

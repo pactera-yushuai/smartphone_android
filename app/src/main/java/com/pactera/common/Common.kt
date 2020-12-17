@@ -96,8 +96,6 @@ object Common {
 
         val toast = Toast.makeText(context, string, Toast.LENGTH_SHORT)
 
-        toast.setGravity(Gravity.CENTER, 0, 0)
-
         toast.show()
 
     }

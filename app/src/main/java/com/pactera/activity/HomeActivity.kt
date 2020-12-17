@@ -5,6 +5,7 @@ import android.os.Handler
 import androidx.fragment.app.Fragment
 import com.pactera.R
 import com.pactera.activity.base.BaseActivity
+import com.pactera.common.Common
 import com.pactera.fragment.*
 import com.pactera.fragment.base.BaseFragment
 
@@ -16,7 +17,7 @@ class HomeActivity : BaseActivity() {
 
     private var welcomeFragment: WelcomeFragment? = null
     private var guideFragment: GuideFragment? = null
-    private var mainFragment: MainFragment? = null
+    public var mainFragment: MainFragment? = null
     private var weiTaoFragment: WeiTaoFragment? = null
     private var detailFragment: DetailFragment? = null
 
@@ -222,18 +223,38 @@ class HomeActivity : BaseActivity() {
 
     }
 
-    override fun onBackPressed() {
-        println("还剩： " + supportFragmentManager.backStackEntryCount)
-        println("fragments： " + supportFragmentManager.fragments)
-        println("primaryNavigationFragment： " + supportFragmentManager.primaryNavigationFragment)
-        println("fragmentFactory： " + supportFragmentManager.fragmentFactory)
-//        if(supportFragmentManager.backStackEntryCount==0){
+//    override fun onBackPressed() {
+//        println("还剩： " + supportFragmentManager.backStackEntryCount)
+//        println("fragments： " + supportFragmentManager.fragments)
+//        println("primaryNavigationFragment： " + supportFragmentManager.primaryNavigationFragment)
+//        println("fragmentFactory： " + supportFragmentManager.fragmentFactory)
+////        if(supportFragmentManager.backStackEntryCount==0){
+////            finish()
+////        }
+//        if(currentFragment==mainFragment){
 //            finish()
+//        }else{
+//            switchFragment(MAIN_FRAGMENT)
 //        }
-        if(currentFragment==mainFragment){
+//    }
+
+    override fun onBackPressed() {
+        doubleClick()
+    }
+
+
+
+    private var isExit = false
+
+    private fun doubleClick() {
+        if (!isExit) {
+            isExit = true // 准备退出
+            Common.showToast(this, getString(R.string.hint_of_exit))
+            Handler(mainLooper).postDelayed({
+                isExit = false // 取消退出
+            }, 1000)
+        } else {
             finish()
-        }else{
-            switchFragment(MAIN_FRAGMENT)
         }
     }
 

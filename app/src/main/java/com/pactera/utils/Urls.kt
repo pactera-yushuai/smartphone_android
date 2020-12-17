@@ -9,13 +9,10 @@ import com.pactera.BuildConfig
 
 object Urls {
 
-    const val SERVER_URL = BuildConfig.BASE_URL
+//    const val SERVER_URL = BuildConfig.BASE_URL
+    const val SERVER_URL = "https://uni.xingyi.art"
 
-    const val IMAGE_URL = "http://192.168.103.32:8080/pigeon/upload/"
-
-    const val GO_SERVER_URL = ""
-
-    const val LOGIN_URL = "$SERVER_URL/auth" // 登录并获取token
+    const val IMAGE_URL = "http://192.168.103.32:8080/pactera/upload/"
 
     const val HOME_URL = "$SERVER_URL/getTopList"
 

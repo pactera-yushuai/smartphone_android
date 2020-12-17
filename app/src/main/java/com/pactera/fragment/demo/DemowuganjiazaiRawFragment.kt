@@ -104,7 +104,7 @@ open class DemowuganjiazaiRawFragment : BaseFragment() {
             Handler(mActivity.mainLooper).postDelayed({
                 homeFragmentViewModel.getList()
             }, 1500)
-            hud.show()
+//            hud.show()
         }
     }
 

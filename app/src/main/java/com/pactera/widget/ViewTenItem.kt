@@ -10,11 +10,13 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.lifecycle.LifecycleOwner
 import com.pactera.R
-import com.pactera.activity.demo.DownloadActivity
-import com.pactera.activity.demo.DownloadActivityBack
+import com.pactera.activity.HomeActivity
+import com.pactera.activity.demo.DemowuganjiazaiActivity
 import com.pactera.activity.demo.SkeletonActivity
 import com.pactera.adapter.viewpageradapter.BannerAdapter
 import com.pactera.bean.Banner
+import com.pactera.fragment.MainFragment.Companion.DOWNLOADFRAGMENT
+import com.pactera.fragment.MainFragment.Companion.downloadFragment
 import com.youth.banner.indicator.CircleIndicator
 import kotlinx.android.synthetic.main.view_ten_item.view.*
 import kotlinx.android.synthetic.main.ys_toolbar2.view.*
@@ -30,14 +32,16 @@ class ViewTenItem(context: Context, attrs:AttributeSet?):RelativeLayout(context,
         with(fragment_home_yslinearlayout_1){
             getImageButton().setImageResource(com.pactera.R.mipmap.menu_new)
             setOnClickListener {
-                mActivity.startActivity(Intent(mActivity, SkeletonActivity::class.java))
+                mActivity.startActivity(Intent(mActivity, DemowuganjiazaiActivity::class.java))
             }
         }
 
         with(fragment_home_yslinearlayout_2){
             getImageButton().setImageResource(com.pactera.R.mipmap.menu_hot)
             setOnClickListener {
-//                mActivity.startActivity(Intent(mActivity, DownloadActivity::class.java))
+                downloadFragment?.let {
+                    (mActivity as HomeActivity).mainFragment?.switchFragment(it)
+                }
             }
         }
 
