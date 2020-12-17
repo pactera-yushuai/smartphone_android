@@ -95,14 +95,14 @@ android {
         config {
             keyAlias "key0"
             keyPassword "pactera"
-            storeFile file("../test.jks")
+            storeFile file("../pactera.jks")
             storePassword "pactera"
         }
 
 //        debug {
 //            keyAlias "key0"
 //            keyPassword "pactera"
-//            storeFile file("../test.jks")
+//            storeFile file("../pactera.jks")
 //            storePassword "pactera"
 //        }
     }
